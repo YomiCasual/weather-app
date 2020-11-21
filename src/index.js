@@ -60,7 +60,7 @@ class App extends Component {
    
   }
   render() {
-    console.log(REACT_APP_CLIENT_ID)
+
     return (
       <div>
       <Navbar header="Weather App"/>
