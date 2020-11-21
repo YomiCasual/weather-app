@@ -29,7 +29,7 @@ class App extends Component {
       })
 
       const searchItem = async(cityName) => {
-      const request = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=9ba9717671a6bfb0092626f6325ab298`);
+      const request = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.REACT_APP_CLIENT_ID}`);
 
      const response = await request.json()
      const data = response
